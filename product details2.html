@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DesiredStore | Ecommerce website store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/logo2.jpg" width="50px" height="20px" />
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#the-footer">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><div>&#128722;</div> </a>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+      </div>
+    </div>
+
+    <!--------Single products details--------->
+
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="img/bs 4.jpg" width="100%" />
+        </div>
+        <div class="col-2">
+          <p>Home / Bag-shoe</p>
+          <h1>Bag-Shoe combo ny DesiredStore</h1>
+          <h4>50$</h4>
+          <select>
+            <option>Select Size</option>
+            <option>XXL</option>
+            <option>XL</option>
+            <option>Large</option>
+            <option>Medium</option>
+            <option>Small</option>
+          </select>
+          <input type="number" value="1" />
+          <a href="" class="btn">Add to Cart</a>
+          <h3>Product Details <i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+            A chic Bag and shoe combo in White color. Level up your game with
+            this Beauty. The best in the game
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------title-------------------->
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View more</p>
+      </div>
+    </div>
+
+    <!------------------------products-------------------->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="img/bs 5.jpg" />
+          <h4>White Chick Shoe and Bag Combo</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="img/bs 3.jpg" />
+          <h4>Black Chick Shoe and Bag Combo</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="img/bs 6.jpg" />
+          <h4>Brown Chick Shoe and Bag Combo</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!--------Footer--------->
+    <footer id="the-footer">
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phones.</p>
+              <div class="app-logo">
+                <img
+                  src="https://th.bing.com/th/id/OIP.lOQ4964asX3btKX9JgTKkgHaCh?w=728&h=248&rs=1&pid=ImgDetMain"
+                />
+                <img
+                  src="https://th.bing.com/th/id/R.fb92fe807976585f1f6badfbf3aee51a?rik=fXl0njtS%2fCx83A&pid=ImgRaw&r=0"
+                />
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="img/logo2.jpg" width="100px" />
+              <p>
+                Our goal is to serve your feets and hands with the best with
+                classy bags and shoes that scream EXPENSIVE!
+              </p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Join Affliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow Us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Tiktok</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copyright 2025 - Viviancodes</p>
+        </div>
+      </div>
+    </footer>
+
+    <!------------------js for menu toggle---------->
+    <script>
+      const menuIcon = document.getElementById("menuIcon");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DesiredStore | Ecommerce website store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/logo2.jpg" width="50px" height="20px" />
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#the-footer">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><div>&#128722;</div> </a>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+      </div>
+    </div>
+
+    <!-------------cart items details---------->
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/BS10.jpg" />
+              <div>
+                <p>Black Bag-shoe combo</p>
+                <small>Price: $50.00</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/BS7.jpg" />
+              <div>
+                <p>White Bag-shoe combo</p>
+                <small>Price: $50.00</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/BS8.jpg" />
+              <div>
+                <p>Yellow Bag-shoe combo</p>
+                <small>Price: $50.00</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$50.00</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$200.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$30.00</td>
+          </tr>
+          <tr>
+            <td>Subtotal</td>
+            <td>$230.00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!--------Footer--------->
+    <footer id="the-footer">
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phones.</p>
+              <div class="app-logo">
+                <img
+                  src="https://th.bing.com/th/id/OIP.lOQ4964asX3btKX9JgTKkgHaCh?w=728&h=248&rs=1&pid=ImgDetMain"
+                />
+                <img
+                  src="https://th.bing.com/th/id/R.fb92fe807976585f1f6badfbf3aee51a?rik=fXl0njtS%2fCx83A&pid=ImgRaw&r=0"
+                />
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="img/logo2.jpg" width="100px" />
+              <p>
+                Our goal is to serve your feets and hands with the best with
+                classy bags and shoes that scream EXPENSIVE!
+              </p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Join Affliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow Us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Tiktok</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copyright 2025 - Viviancodes</p>
+        </div>
+      </div>
+    </footer>
+
+    <!------------------js for menu toggle---------->
+    <script>
+      const menuIcon = document.getElementById("menuIcon");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
